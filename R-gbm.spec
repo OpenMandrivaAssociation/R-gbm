@@ -9,9 +9,16 @@ Group:            Sciences/Mathematics
 License:          GPL (>= 2)
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_1.6-3.1.tar.gz
-Requires:         R-survival R-lattice R-splines
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-survival
-BuildRequires:    R-lattice R-splines
+Requires:         R-survival
+Requires:         R-lattice
+Requires:         R-splines 
+BuildRequires:    R-devel
+BuildRequires:    Rmath-devel
+BuildRequires:    texlive-collection-latex
+BuildRequires:    R-survival
+BuildRequires:    R-lattice
+BuildRequires:    R-splines
+BuildRequires:    pkgconfig(lapack)
 
 %description
 This package implements extensions to Freund and Schapire's AdaBoost
@@ -47,3 +54,11 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/demo
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/libs
+
+
+%changelog
+* Fri Feb 17 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.6_3.1-1
++ Revision: 775948
+- Import R-gbm
+- Import R-gbm
+
