@@ -2,20 +2,20 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          1.6_3.1
+Version:          2.0.8
 Release:          1
 Summary:          Generalized Boosted Regression Models
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/%{packname}_1.6-3.1.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/gbm_2.0-8.tar.gz
 Requires:         R-survival
 Requires:         R-lattice
-Requires:         R-splines 
+Requires:         R-splines R-RUnit
 BuildRequires:    R-devel
 BuildRequires:    Rmath-devel
 BuildRequires:    texlive-collection-latex
-BuildRequires:    R-survival
+BuildRequires:    R-survival R-RUnit
 BuildRequires:    R-lattice
 BuildRequires:    R-splines
 BuildRequires:    pkgconfig(lapack)
@@ -61,4 +61,5 @@ rm -f %{buildroot}%{rlibdir}/R.css
 + Revision: 775948
 - Import R-gbm
 - Import R-gbm
+
 
