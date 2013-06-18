@@ -3,7 +3,7 @@
 
 Name:             R-%{packname}
 Version:          2.0.8
-Release:          1
+Release:          2
 Summary:          Generalized Boosted Regression Models
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
